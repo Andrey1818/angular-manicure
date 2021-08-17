@@ -1,0 +1,94 @@
+
+.top-photo-container {
+  margin: 0 auto;
+  position: relative;
+
+    img {
+      width: 100%;
+      height: 600px;
+    }
+
+  .backdrop-on-photo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: black;
+    z-index: 1;
+    opacity: 0.9;
+    color: #c1ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content-on-photo {
+      position: relative;
+      min-width: 400px;
+      height: auto;
+
+      .logo {
+        margin: 0 auto;
+        display: flex;
+        max-width: 350px;
+
+        #logo-photo {
+          max-width: 130px;
+          max-height: 130px;
+          border-right: 3px solid #dfffff;
+        }
+
+        .logo-text {
+          display: block;
+          padding-left: 10px;
+
+          h1 {
+            color: #c1ffff;
+            font-size: 1.6rem;
+          }
+
+          h2 {
+            color: #fff5ff;
+            font-family: 'Josefin Slab', serif;
+          }
+
+        }
+      }
+
+      .container-hrefs {
+        max-width: 400px;
+        text-align: center;
+        border-top: 4px solid #ffedff;
+        margin: 30px auto;
+        padding-top: 30px;
+
+        .container-hrefs-for-flex {
+          max-width: 200px;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+        }
+
+        h3 {
+          font-size: 1.5rem;
+          color: #c1ffff;
+          cursor: pointer;
+          border-bottom: 2px solid black;
+        }
+
+        h3:hover {
+          color: #81ffff;
+          border-bottom-color: #81ffff;
+          transition: border-bottom-color 0.5s;
+        }
+      }
+    }
+  }
+}
+
+.main-information-self {
+  margin-top:20px;
+}
+
