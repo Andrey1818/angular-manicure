@@ -1,0 +1,47 @@
+{
+  "$schema": "./node_modules/@angular/service-worker/config/schema.json",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/manifest.webmanifest",
+          "/*.css",
+          "/*.js"
+        ],
+        "urls": [
+          "https://fonts.googleapis.com/css2?family=Courgette&display=swap",
+          "https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap",
+          "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap"
+        ]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/**",
+          "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
+        ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "firebase-images",
+      "urls": [
+        "https://angular-manicure-default-rtdb.asia-southeast1.firebasedatabase.app/"
+      ],
+      "cacheConfig": {
+        "maxSize": 5,
+        "maxAge": "3600"
+      }
+    }
+  ],
+  "index": "/index.html"
+}
